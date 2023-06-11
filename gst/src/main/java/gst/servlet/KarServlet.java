@@ -39,13 +39,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 	kar.setSgst(sgst1);
 	kar.setProductName(name);
 	
-//	EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory("Lavanya");
-//	EntityManager entityManager=entityManagerFactory.createEntityManager();
-//	EntityTransaction entityTransaction=entityManager.getTransaction();
-//	entityTransaction.begin();
-//	entityManager.persist(kar);
-//	entityTransaction.commit();
-	
+
 	EntityManagerFactory factory=Persistence.createEntityManagerFactory("Lavanya");
 	EntityManager manager=factory.createEntityManager();
 	EntityTransaction tx=manager.getTransaction();
